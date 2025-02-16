@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <div id="header">
+      <div id="logo" onclick="hideExamples(); hideServices(); hs()">ANTYBIU</div>
+      <div id="header-options">
+        <div id="demo"  class="hover-audio header-options" onclick="hideServices();hs();showExamples()">DEMOS</div>
+        <div id="about-us" class="hover-audio header-options" onclick="hideServices();hideExamples();s()">ABOUT US</div>
+        <div id="services" class="hover-audio header-options" onclick="hideExamples();hs();showServices()">SERVICES</div>
+      </div>
+      <div id="contact-us" class="hover-audio" onclick="contact()">CONTACT US</div>
+    </div>
+    <div id="body">
+      <div id="examples-page" >
+        <div class="demo">
+          <div class="shadow"></div>
+          <div class="example-name">DEMO 1</div>
+          <div class="view" onclick="window.open('https://antybiu.github.io/lola/')">VIEW</div>
+        </div>
+        <!--
+        <div class="demo">
+          <div class="shadow" id="shadow1"></div>
+          <div class="example-name">DEMO 2</div>
+          <div class="view">VIEW</div>
+        </div>
+        -->
+        
+      </div>
+      <div id="services-page">
+        <div class="services-slot">
+          <div class="services-tier" id="basic">BASIC</div>
+          <div class="services-desc">FRONT-END ONLY</div>
+        </div>
+
+        <div class="services-slot">
+          <div class="services-tier" id="advanced">ADVANCED</div>
+          <div class="services-desc">BACK-END SUPPORT</div>
+        </div>
+
+        <div class="services-slot">
+          <div class="services-tier" id="addon">ADDONS</div>
+          <div class="services-desc">ANIMATIONS<br>3D EFFECTS<br>RUSHED DEVELOPMENT</div>
+        </div>
+        
+        <div id="notes">
+          FOR PRICE & OTHER ENQUIRES, PLEASE CONTACT US.<br>
+          BACK-END DEVELOPEMENT TEMPORARILY UNAVAILABLE
+        </div>
+      </div>
+      <div id="about-us-page">
+        <div id="about-us-title">ABOUT US</div>
+        <div id="about-us-body">
+          ANTYBIU IS THE NICKNAME OF ITS FOUNDER, SEAH ZHIHEN.
+IT BEGAN AS A PERSONAL PROJECT WHEN HE WAS BORED AT HOME AND WAS INITIALLY INTENDED TO BE A PORTFOLIO WEBSITE FOR WHEN ANTYBIU EVENTUALLY BECOMES AN OFFICIAL BUSINESS. HOWEVER, THAT IS STILL YEARS AWAY, AS HE IS ONLY 13 YEARS OLD.<br><br>
+
+STARTING AT THE AGE OF 12, ANTYBIU'S FOUNDER LEARNED HTML, CSS, AND JAVASCRIPT, THEN WENT ON TO CREATE A WEBSITE GAME CALLED <span id="game"><a href="https://antybiu.github.io/project_sundaecone/GAME1_V11/game.html">"PROJECT_SUNDAECONE."</a></span><br><br>
+
+AFTER COMPLETING THE GAME, SEAH ZHIHEN RECOGNIZED AN OPPORTUNITY TO TURN HIS CODING SKILLS INTO A BUSINESS — AND THAT'S HOW ANTYBIU WAS BORN.
+        </div>
+      </div>
+      <div id="intro-text" class="nnn">WANT A WEBSITE?</div><div id="intro-text2" class="nnn">LET US DO IT FOR YOU.</div>
+      <div id="our-work" class="hover-audio nnn" onclick="showExamples()" >VIEW DEMOS</div>
+    </div>
+    <div id="audio-button" class="hover-audio"  onclick="toggleAudio()"><img src="Mute_Icon.svg" id="audio-icon"></div>
+    <div class="three-toggle hover-audio" onclick="toggle3D()">3D</div>
+    <audio id="hover-sound" src="click-21156.mp3" ></audio>
+    <script src="index.js"></script>
+  </body>
+</html>
