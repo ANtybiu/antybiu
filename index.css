@@ -69,7 +69,7 @@ body{
   width: 100%;
   right:0;
 }
-#contact-us{
+#contact-us,#contact-us-hamburger{
   cursor: pointer;
   font-size: 1.5rem;
   margin-right: 7.5rem;
@@ -82,6 +82,10 @@ body{
   background-color: transparent;
   color: white;
   transition: background-color 0.15s, color 0.15s;
+}
+#contact-us-hamburger:hover{
+  background-color: white;
+  color:black
 }
 #contact-us:hover{
   background-color: white;
@@ -335,5 +339,61 @@ body{
   border-top: 5px solid white;
   font-size: 1rem;
   padding-top: 1rem;
+}
+#hamburger-options{
+  display:none;
+  flex-direction: column;
+  text-align: right;
+  margin-right: 0rem;
+  opacity: 0;
+  margin-top: 20rem;
+  font-size: 2rem;
+  transition: margin-right 0.25s, opacity 0.25s;
+}
+#hamburger-icon{
+  display:none;
+  opacity: 1 !important;
+  cursor: pointer;
+}
+#hamburger-icon:hover{
+  opacity: 0.9;
+}
+#hamburger-container{
+  margin-top: 4.5rem;
+  margin-right: 0rem;
+  display: none;
+  flex-direction: column;
+  position: relative;
+  transition: margin-right 0.5s, opacity 0.5s;
+}
+@media(max-width: 1000px){
+  html{
+    font-size: 2vw;
+  }
+  #header-options{
+    display:none;
+  }
+  #hamburger-container{
+    display:flex;
+  }
+  #hamburger-icon{
+    display:flex;
+    font-size: 3rem;
+    position: fixed;
+    right: 4rem;
+    top: 0.6rem;
+    opacity: 1 !important;
+  }
+  #contact-us-hamburger{
+    margin-right: 0rem;
+    margin-top: 1rem;
+  }
+  #contact-us{
+    display:none;
+  }
+  #services-page{
+    flex-direction: column;
+    gap: 5rem;
+  }
 }
 
