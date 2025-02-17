@@ -183,3 +183,21 @@ function isMobile() {
 if (isMobile()) {
   deviceType = 'mobile'
 }
+let showH = false;
+function showHamburger(){
+  showH = !showH;
+  if(showH){
+  document.getElementById('hamburger-options').style.display = `flex`;
+  setTimeout(()=>{
+    document.getElementById('hamburger-options').style.marginRight = `5rem`;
+  document.getElementById('hamburger-options').style.opacity = `1`;
+  },1)
+  
+  }else{
+    document.getElementById('hamburger-options').style.marginRight = `0rem`;
+    document.getElementById('hamburger-options').style.opacity = `0`;
+    setTimeout(()=>{
+    document.getElementById('hamburger-options').style.display = `none`;
+    },500)
+  }
+}
